@@ -1,27 +1,34 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+* {
+  font-family: "DM sans", sans-serif;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+h1 {
+  font-weight: bold;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.button {
+  background: #333;
+  margin-top: 10px;
+  border-radius: 3px;
 }
 
-#container a {
-  text-decoration: none;
+.container {
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 1rem 4rem;
+  border: 1px solid #333;
+  border-radius: 3px;
+}
+
+ion-label {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  margin: 10px 0 10px 5px;
+}
+
+.all {
+  display: flex;
+  margin: 8rem 7rem;
 }

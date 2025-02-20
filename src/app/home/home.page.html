@@ -1,20 +1,71 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      AC1 - PROGRAMAÇÃO III
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">AC1</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="all">
+    <div class="container">
+      <h1>Conversor</h1>
+      <ion-item>
+        <ion-input label="C to F" labelPlacement="floating" placeholder="C to F" type="number" [(ngModel)]="temp_c">
+        </ion-input>
+      </ion-item>
+      <ion-button (click)="converter_c()">Converter</ion-button>
+      <ion-label>Res: {{res_c}}°F</ion-label>
+
+      <ion-item>
+        <ion-input label="F to C" labelPlacement="floating" placeholder="F to C" type="number" [(ngModel)]="temp_f">
+        </ion-input>
+      </ion-item>
+      <ion-button (click)="converter_f()">Converter</ion-button>
+      <ion-label>Res: {{res_f}}°C</ion-label>
+    </div>
+    <div class="container">
+      <h1>Triângulo</h1>
+      <ion-item>
+        <ion-input label="Lado 1" labelPlacement="floating" type="number" [(ngModel)]="a">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Lado 2" labelPlacement="floating" type="number" [(ngModel)]="b">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Lado 3" labelPlacement="floating" type="number" [(ngModel)]="c">
+        </ion-input>
+      </ion-item>
+      <ion-button class="button" (click)="ver_triangulo()">Converter</ion-button>
+      <ion-label>{{res_triangulo}}</ion-label>
+    </div>
+    <div class="container">
+      <h1>Média</h1>
+      <ion-item>
+        <ion-input label="Nota 1" labelPlacement="floating" type="number" [(ngModel)]="n1">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Nota 2" labelPlacement="floating" type="number" [(ngModel)]="n2">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Nota 3" labelPlacement="floating" type="number" [(ngModel)]="n3">
+        </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input label="Nota 4" labelPlacement="floating" type="number" [(ngModel)]="n4">
+        </ion-input>
+      </ion-item>
+      <ion-button class="button" (click)="ver_media()">Converter</ion-button>
+      <ion-label>{{res_media}}</ion-label>
+    </div>
   </div>
 </ion-content>
