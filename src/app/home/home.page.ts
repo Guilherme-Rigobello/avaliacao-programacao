@@ -38,7 +38,7 @@ export class HomePage {
       this.b + this.c < this.a ||
       this.a + this.c < this.b
     ) {
-      this.res_triangulo = "Os lados não formam um triângulo!";
+      this.res_triangulo = "Não é um triângulo!";
     } else if (this.a === this.b && this.b === this.c) {
       this.res_triangulo = "Triângulo é um equilátero!";
     } else if (this.a != this.b && this.b != this.c && this.a != this.c) {
