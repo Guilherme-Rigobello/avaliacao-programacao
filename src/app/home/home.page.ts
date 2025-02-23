@@ -40,11 +40,11 @@ export class HomePage {
     ) {
       this.res_triangulo = "Não é um triângulo!";
     } else if (this.a === this.b && this.b === this.c) {
-      this.res_triangulo = "Triângulo é um equilátero!";
+      this.res_triangulo = "O Triângulo é equilátero!";
     } else if (this.a != this.b && this.b != this.c && this.a != this.c) {
-      this.res_triangulo = "Triângulo é um escaleno!";
+      this.res_triangulo = "O Triângulo é escaleno!";
     } else {
-      this.res_triangulo = "Triângulo é um isóceles!";
+      this.res_triangulo = "O Triângulo é isóceles!";
     }
   }
 
