@@ -8,13 +8,13 @@ h1 {
 
 .button {
   background: #333;
-  margin-top: 10px;
+  margin-top: 1rem;
   border-radius: 3px;
 }
 
 .container {
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 3rem;
   padding: 1rem 4rem;
   border: 1px solid #333;
   border-radius: 3px;
@@ -31,4 +31,13 @@ ion-label {
 .all {
   display: flex;
   margin: 8rem 7rem;
+}
+
+@media screen and (max-width: 900px) {
+
+  .all{
+    display: flex;
+    flex-direction: column;
+  }
+
 }
