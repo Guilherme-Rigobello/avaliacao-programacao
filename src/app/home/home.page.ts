@@ -34,9 +34,9 @@ export class HomePage {
 
   ver_triangulo() {
     if (
-      this.a + this.b < this.c ||
-      this.b + this.c < this.a ||
-      this.a + this.c < this.b
+      this.a + this.b <= this.c ||
+      this.b + this.c <= this.a ||
+      this.a + this.c <= this.b
     ) {
       this.res_triangulo = "Não é um triângulo!";
     } else if (this.a === this.b && this.b === this.c) {
